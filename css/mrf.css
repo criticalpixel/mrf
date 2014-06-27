@@ -1,0 +1,118 @@
+/* MRF - Minimalistic Responsive Framework 
+Version : 0.1.5
+Author  : Thomas Horvath (Based off Lemon.css)
+*/
+
+
+/* Border Box Responsive Set Up */
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  /* Removes padding behaviour on widths */
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ 
+/* Attribute selector */
+[class*='el-'] {
+  float: left;
+  padding: 10px;
+}
+ 
+/* Floats last ".el-" to the right */
+[class*='el-']:last-of-type {
+  padding-right: 10px;
+  float: right;
+}
+ 
+/* Clearfix */
+.frame:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Set widths (For all abobe 1100px) */
+
+.el-1  { width: 100%;}
+.el-2  { width: 50%;}
+.el-3  { width: 33.33%;}
+.el-4  { width: 25%;}
+.el-5  { width: 20%;}
+.el-6  { width: 16.6666666667%;}
+.el-7  { width: 14.2857142857%;}
+.el-8  { width: 12.5%;}
+.el-9  { width: 11.1111111111%;}
+.el-10 { width: 10%;}
+.el-11 { width: 9.09090909091%;}
+.el-12 { width: 8.33%;} 
+
+/* Blog Style widths */
+
+.el-post    { width: 70%;}
+.el-sidebar { width: 30%;}
+.el-75      { width: 75%;}
+.el-60      { width: 60%;}
+.el-40      { width: 40%;}
+
+
+/* Base tablet to small laptops */
+@media (min-width: 800px) and (max-width: 1100px) {
+  .el-2,
+  .el-7 {
+    width: 100%;
+  }
+ 
+  .el-4,
+  .el-8,
+  .el-10,
+  .el-12 {
+    width: 50%;
+  }
+}
+
+/* Base tablet styles*/
+@media (max-width: 800px) {
+.el-4,
+  .el-6,
+  .el-8,
+  .el-10,
+  .el-12 {
+    width: 50%;
+  }
+ 
+  .el-1,
+  .el-2,
+  .el-3,
+  .el-5,
+  .el-7,
+  .el-9,
+  .el-11 {
+    width: 100%;
+  }
+}
+
+
+/* Base mobile styles - everything 100%*/
+@media (max-width: 480px) {
+  .el-1,
+  .el-2,
+  .el-3,
+  .el-4,
+  .el-5,
+  .el-6,
+  .el-7,
+  .el-8,
+  .el-9,
+  .el-10,
+  .el-11,
+  .el-12 {
+    width: 100%;
+  }
+}
+
+
