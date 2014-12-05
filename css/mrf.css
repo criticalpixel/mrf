@@ -1,5 +1,5 @@
 /* MRF - Minimalistic Responsive Framework 
-Version : 0.1.5
+Version : 0.1.6
 Author  : Thomas Horvath (Based off Lemon.css)
 */
 
@@ -35,6 +35,13 @@ Author  : Thomas Horvath (Based off Lemon.css)
   display: table;
   clear: both;
 }
+
+/* Section width */
+section {
+  width: 60%;
+  margin:0 auto;
+}
+
 
 /* Set widths (For all abobe 1100px) */
 
@@ -113,6 +120,9 @@ Author  : Thomas Horvath (Based off Lemon.css)
   .el-12 {
     width: 100%;
   }
+  section {
+    width: 100%;
+    margin:0 auto;
+  }
 }
-
 
