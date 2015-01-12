@@ -1,4 +1,5 @@
-mrf
+Coras Product
 ===
 
-Minimalistic Responsive Framework (MRF)
+Template for Coras Product
+- Branch of MRF 0.6

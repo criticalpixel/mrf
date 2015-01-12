@@ -1,5 +1,5 @@
-/* MRF - Minimalistic Responsive Framework 
-Version : 0.1.6
+/* CORAS PRODUCT FRAMEWORK
+Version : 0.7
 Author  : Thomas Horvath (Based off Lemon.css)
 */
 
@@ -38,7 +38,7 @@ Author  : Thomas Horvath (Based off Lemon.css)
 
 /* Section width */
 section {
-  width: 60%;
+  width: 600px;
   margin:0 auto;
 }
 
